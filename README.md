@@ -1,7 +1,6 @@
-# ETHSingpore
+# KuSwap
 
-> A Vue.js project
-
+> ETHSingpore Hackathon project, based on the Kyber Protocol
 ## Build Setup
 
 ``` bash
