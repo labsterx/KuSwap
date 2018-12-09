@@ -12,9 +12,9 @@ Vue.js was used to build the static website. Web3.js, MetaMask and Infura were u
 
 Via IPFS Gateways:
 
-https://ipfs.io/ipfs/QmZggB5qTGYSSfZgM5n7359eRziCeHuUujZzS3dMVKbtH7
+https://ipfs.io/ipfs/QmP5dvQj6VhdBVN6cDkWWRvYpGNs8NgdT1BSgx7KpcSFxf
 
-https://cloudflare-ipfs.com/ipfs/QmZggB5qTGYSSfZgM5n7359eRziCeHuUujZzS3dMVKbtH7
+https://cloudflare-ipfs.com/ipfs/QmP5dvQj6VhdBVN6cDkWWRvYpGNs8NgdT1BSgx7KpcSFxf
 
 Via Domain Name:
 
