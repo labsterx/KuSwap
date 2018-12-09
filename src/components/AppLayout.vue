@@ -2,15 +2,11 @@
 
 <div>
 
-<b-navbar toggleable="md" type="dark" variant="info">
+  <div class="p-3 text-center bg-white">
+    <img src="static/images/logo.png" with="232" height="67">
+  </div>
 
-  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-  <b-navbar-brand href="#">KuSwap</b-navbar-brand>
-
-</b-navbar>
-
-<!-- navbar-1.vue -->
     <div>
 
        <router-view :key="key" />

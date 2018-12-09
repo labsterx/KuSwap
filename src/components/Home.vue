@@ -58,21 +58,21 @@
   </div>
 
   <div class="bg-white text-center my-3 p-3 round-corner" v-show="waitingNetwork">
-    <div class="fa-lg text-center mb-2">
+    <div class="fa-2x text-center mb-2">
     <i class="fa fa-spinner fa-pulse"></i>
     </div>
     <div v-if="waitingMessage" class="preloader-text text-center">{{ waitingMessage }}</div>
   </div>
 
   <div class="bg-white text-center my-3 p-3 round-corner" v-if="success === true">
-     <div class="fa-lg text-center mb-2">
+     <div class="fa-2x text-center mb-2">
       <i class="fa fa-check-circle color-green"></i>
     </div>
     <div>Done!</div>
   </div>
 
   <div class="bg-white text-center my-3 p-3 round-corner" v-if="failure === true">
-     <div class="fa-lg text-center mb-2">
+     <div class="fa-2x text-center mb-2">
       <i class="fa fa-exclamation-circle color-red"></i>
     </div>
     <div>Sorry! Transaction Failed!</div>
