@@ -18,7 +18,7 @@ https://cloudflare-ipfs.com/ipfs/QmZggB5qTGYSSfZgM5n7359eRziCeHuUujZzS3dMVKbtH7
 
 Via Domain Name:
 
-http://www.kuswap.com/
+http://kuswap.com/
 
 ## Build Setup
 

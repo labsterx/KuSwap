@@ -140,6 +140,15 @@ export default {
         && !this.inputHasError)
     },
 
+    calcDstQty(srcQty, srcDecimals, dstDecimals, rate) {
+      const PRECISION = (10 ** 18);
+      if (dstDecimals >= srcDecimals) {
+        return (srcQty * rate * (10**(dstDecimals - srcDecimals))) / PRECISION;
+      } else {
+        return (srcQty * rate) / (PRECISION * (10**(srcDecimals - dstDecimals)));
+      }
+    },
+
     getTokenSelectOptions () {
       this.inputOptions.srcTokens = []
       this.inputOptions.destTokens = []
@@ -236,8 +245,9 @@ export default {
         return
       }
 
-      this.expectedRate = expectedRate
-      this.input.destAmount = (new BigNumber(this.input.srcAmount * expectedRate)).div(10**srcToken.decimals).toFixed(6)
+      this.input.destAmount = new BigNumber(this.calcDstQty(srcQty, srcToken.decimals, destToken.decimals, expectedRate)).div(10**destToken.decimals).toFixed(6)
+
+      // this.input.destAmount = (new BigNumber(this.input.srcAmount * expectedRate)).div(10**srcToken.decimals).toFixed(6)
 
     },
 
